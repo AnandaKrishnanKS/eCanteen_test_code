@@ -1,7 +1,15 @@
-import React from 'react'
+"use client"
+import getData from '@/api/dishes'
+import React, { useEffect } from 'react'
 
 const Homepage = () => {
 
+    useEffect(() => {
+      
+        getData()
+    
+    }, [])
+    
 
 
   return (
